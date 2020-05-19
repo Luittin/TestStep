@@ -8,7 +8,6 @@ public class SaveOrLoad
     {
         string stats = gameStats.GetCoins() + "|" + gameStats.GetBestResult();
         PlayerPrefs.SetString("Save",stats);
-        Debug.Log(stats);
     }
 
     public static void Load(GameStats gameStats)

@@ -45,7 +45,6 @@ public class MoveBlock : MonoBehaviour
         targetPosition = target.position;
         targetPosition.y = transform.position.y;
 
-        Debug.Log(Mathf.Abs(Vector3.Distance(transform.position, targetPosition)) + "|||||" + speedStep);
         if(Mathf.Abs(Vector3.Distance(transform.position,targetPosition)) <= speedStep)
         {
             return true;
